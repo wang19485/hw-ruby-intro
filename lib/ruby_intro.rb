@@ -4,14 +4,26 @@
 
 def sum arr
   # YOUR CODE HERE
+  if arr.empty?
+    0
+  else arr.inject :+
+  end
 end
 
 def max_2_sum arr
   # YOUR CODE HERE
+  if arr.empty?
+    0
+  elsif arr.length == 1
+    arr[0]
+  else
+    arr.sort[-2] + arr.sort[-1]
+  end
 end
 
 def sum_to_n? arr, n
   # YOUR CODE HERE
+  
 end
 
 # Part 2
